@@ -14,6 +14,10 @@
   z-index: 1;
   list-style: none;
 }
-.menuItem:hover .sub-menu{
+.sub-menu.open{
   display: block;
+}
+
+.outline{
+  border: solid 2px yellow;
 }
