@@ -14,7 +14,7 @@
   z-index: 1;
   list-style: none;
 }
-.sub-menu.open{
+.open{
   display: block;
 }
 

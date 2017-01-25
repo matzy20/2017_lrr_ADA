@@ -1,12 +1,16 @@
 $('li > a').keydown(function(e){
 
-  var subMenu = $(this).next('ul');
-  if (e.which == 9) {
+var subMenuChildren = document.getElementsByTagName("li");
+var subMenu = $(this).next('ul');
+
+for (var i = 0; i < subMenuChildren.length; i++){
+  var lastDropdown = document.getElementsByClassName('lastDropdown');
+
+  if (e.which == 9 && subMenuChildren !== lastDropdown) {
     subMenu.addClass('open');
   }
   else{
     subMenu.removeClass('open');
   }
-
-  console.log($('ul.sub-menu > li').length);
-  });
+}
+});
